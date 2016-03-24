@@ -10,15 +10,10 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 
 libraryDependencies ++= {
-  val akkaV       = "2.4.+"
-  val akkaStreamV = "2.0.3"
+  val akkaV       = "2.4.2"
   Seq(
     "com.typesafe.akka" % "akka-actor_2.11" % akkaV,
-    "com.typesafe.akka" %% "akka-remote" % akkaStreamV,
-    "com.typesafe.akka" % "akka-http-core-experimental_2.11" % akkaStreamV,
-    "com.typesafe.akka" % "akka-http-experimental_2.11" % akkaStreamV,
-    "com.typesafe.akka" % "akka-http-spray-json-experimental_2.11" % akkaStreamV,
-    "com.typesafe.akka" % "akka-http-testkit-experimental_2.11" % akkaStreamV,
+    "com.typesafe.akka" %% "akka-remote" % akkaV,
     "org.specs2" % "specs2_2.11" % "3.7" % "test",
     "commons-configuration" % "commons-configuration" % "1.10"
   )
