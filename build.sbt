@@ -14,6 +14,7 @@ libraryDependencies ++= {
   Seq(
     "com.typesafe.akka" % "akka-actor_2.11" % akkaV,
     "com.typesafe.akka" %% "akka-remote" % akkaV,
+    "com.github.levkhomich" %% "akka-tracing-core" % "0.4",
     "org.specs2" % "specs2_2.11" % "3.7" % "test",
     "commons-configuration" % "commons-configuration" % "1.10"
   )
